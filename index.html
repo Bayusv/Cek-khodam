@@ -127,7 +127,7 @@
         <input type="text" id="nameInput" placeholder="Ketik nama kamu di sini">
         <button onclick="cekKhodam()">Cek Khodam</button>
         <div id="loading" class="loading-spinner" style="display: none;"></div>
-        <button onclick="resetForm()" style="margin-top: 20px;">Cek Lagi</button>
+        <button onclick="resetForm()" style="margin-top: 20px;">Reset</button>
         <div id="result">
             <h2 id="khodamName"></h2>
             <p id="khodamMeaning"></p>
@@ -151,6 +151,10 @@
             document.getElementById('loading').style.display = 'block'; // Tampilkan spinner
             setTimeout(() => {
                 const khodams = [
+                { name: "Tobrut", meaning: "Sangat indah jika di lihat dengan mata yg jernih, behh gede men" },
+                { name: "Ceker Babat", meaning: "Mantap bos, Ceker Babat no Counter AwokAwokAwok" },
+                { name: "RyanManggala", meaning: "Kak minta 5jt buat topup epep, Pertanyaan bagus men, Behh Kasus men" },
+                { name: "Kontol Terbang", meaning: "Anjay Kontol nya terbang, Kece kali kontol nya terbang" },
                 { name: "Harimau Putih", meaning: "Kamu kuat dan berani seperti harimau, karena pendahulumu mewariskan kekuatan besar padamu." },
                 { name: "Lampu Tertidur", meaning: "Terlihat ngantuk tapi selalu memberikan cahaya yang hangat" },
                 { name: "Panda Ompong", meaning: "Kamu menggemaskan dan selalu berhasil membuat orang tersenyum dengan keanehanmu." },
